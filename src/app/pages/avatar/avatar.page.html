@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"> </ion-back-button>
+    </ion-buttons>
+    <ion-title>Avatar</ion-title>
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <img [src]="avatarUrl" />
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-chip>
+    <ion-avatar>
+      <img [src]="avatarUrl" />
+    </ion-avatar>
+    <ion-label>Stan Lee</ion-label>
+    <ion-icon name="close-circle"></ion-icon>
+  </ion-chip>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img [src]="avatarUrl" />
+      </ion-avatar>
+      <ion-label>Paquito</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
